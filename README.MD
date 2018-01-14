@@ -1,5 +1,8 @@
 # ng-svg-icon
 
+GITHUB : https://github.com/guptasanchit90/ng-svg-icon
+NPM : https://www.npmjs.com/package/ng-svg-icon
+
 ## Installation
 
 To install this library, run:
