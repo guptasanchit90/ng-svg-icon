@@ -36,7 +36,7 @@ import { NgSvgIconModule } from 'ng-svg-icon';
   ],
   imports: [
     BrowserModule,
-    NgSvgIconModule
+    NgSvgIconModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -44,13 +44,25 @@ import { NgSvgIconModule } from 'ng-svg-icon';
 export class AppModule { }
 ```
 
+```typescript
+// To pass default config while importing
+NgSvgIconModule.forRoot({
+  defaultColor: '#000',
+  defaultSize: 50,
+  defaultViewBox: '0 0 24 24'
+})
+```
+
+
 Once library is imported, you can use its components in your Angular application:
 
 ```xml
+<!-- Pass custom config to each icon -->
 <ng-svg-icon name="help" color="white" size="24" viewBox="0 0 24 24"></ng-svg-icon>
 ```
 
 ```xml
+<!-- Pass dynamic icon name -->
 <ng-svg-icon [name]="iconName"></ng-svg-icon>
 ```
 
