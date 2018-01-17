@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar text-center>
+    <ion-title>
+      Welcome to Ng-Svg-Icon
+    </ion-title>
+    <ion-buttons end padding-right>
+      <a margin-right href="https://www.npmjs.com/package/ng-svg-icon">NPM</a>
+      <a margin-right href="https://github.com/guptasanchit90/ng-svg-icon">Github</a>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-row>
+    <ion-searchbar no-padding no-margin (ionInput)="onRuleFilter($event)"></ion-searchbar>
+  </ion-row>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-card padding col-auto *ngFor="let iconName of iconsToShow" ngxClipboard [cbContent]="iconName" (cbOnSuccess)="copySuccess()">
+        <ion-row text-center>
+          <ng-svg-icon style="margin:auto;" [name]="iconName" [color]="color" [size]="size" [viewBox]="viewBox"></ng-svg-icon>
+        </ion-row>
+        <ion-card-content style="font-size:small" text-center>
+          {{iconName}}
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+    <ion-row>
+      <ion-col col-sm-4 col-12>
+        <ion-item>
+          <ion-label>Color</ion-label>
+          <ion-input type="text" [(ngModel)]="color"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-sm-4 col-12>
+        <ion-item>
+          <ion-label>ViewBox</ion-label>
+          <ion-input type="text" [(ngModel)]="viewBox"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-sm-4 col-12>
+        <ion-item>
+          <ion-label>Size</ion-label>
+          <ion-input type="text" [(ngModel)]="size"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+</ion-footer>
