@@ -1,6 +1,6 @@
 import { NgSvgConfig } from './ngSvgIcon.config';
 import { NgSvgIconService } from './ngSvgIcon.service';
-import { Input, Component, ViewChild, ElementRef, AfterViewInit, AfterViewChecked, Inject } from '@angular/core';
+import { Input, Component, ViewChild, ElementRef, Inject, OnChanges, SimpleChanges, SimpleChange } from '@angular/core';
 
 @Component({
   selector: 'ng-svg-icon',
@@ -8,7 +8,7 @@ import { Input, Component, ViewChild, ElementRef, AfterViewInit, AfterViewChecke
               #svgContainer>
             </svg>`
 })
-export class NgSvgIconComponent implements AfterViewChecked {
+export class NgSvgIconComponent implements OnChanges {
 
   @ViewChild('svgContainer') svgContainer: ElementRef;
 
@@ -32,8 +32,10 @@ export class NgSvgIconComponent implements AfterViewChecked {
     this.color = this.color || this.ngSvgConfig.defaultColor || '#fff';
   }
 
-  ngAfterViewChecked() {
+  ngOnChanges(changes: SimpleChanges) {
+    const name: SimpleChange = changes.name;
     this.shape = this.ngSvgIconService.getShape(this.name);
     this.svgContainer.nativeElement.innerHTML = this.shape;
   }
+
 }
