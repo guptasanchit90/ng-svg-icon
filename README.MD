@@ -4,6 +4,7 @@
 
 * NPM : https://www.npmjs.com/package/ng-svg-icon
 
+* Demo : https://guptasanchit90.github.io/ng-svg-icon/
 
 ## Installation
 
