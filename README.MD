@@ -6,6 +6,9 @@
 
 * Demo : https://guptasanchit90.github.io/ng-svg-icon/
 
+## Status
+[![Build Status](https://travis-ci.org/guptasanchit90/ng-svg-icon.svg?branch=master)](https://travis-ci.org/guptasanchit90/ng-svg-icon)
+
 ## Installation
 
 To install this library, run:
