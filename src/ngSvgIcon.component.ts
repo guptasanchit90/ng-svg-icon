@@ -1,6 +1,6 @@
 import { NgSvgConfig } from './ngSvgIcon.config';
 import { NgSvgIconService } from './ngSvgIcon.service';
-import { Input, Component, ViewChild, ElementRef, Inject, OnChanges, SimpleChanges, SimpleChange } from '@angular/core';
+import { Input, Component, ViewChild, ElementRef, Inject, OnChanges, SimpleChanges, SimpleChange, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'ng-svg-icon',
@@ -26,10 +26,13 @@ export class NgSvgIconComponent implements OnChanges {
   @Input()
   color: string;
 
+  @HostBinding('style.height') heigh: string;
+
   constructor(public ngSvgIconService: NgSvgIconService, @Inject('NgSvgConfig') private ngSvgConfig: NgSvgConfig) {
     this.size = this.size || this.ngSvgConfig.defaultSize || 24;
     this.viewBox = this.viewBox || this.ngSvgConfig.defaultViewBox || '0 0 24 24';
     this.color = this.color || this.ngSvgConfig.defaultColor || '#fff';
+    this.heigh = this.size + 'px';
   }
 
   ngOnChanges(changes: SimpleChanges) {

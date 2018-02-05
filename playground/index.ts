@@ -10,7 +10,10 @@ import { NgSvgIconModule, NgSvgIconService } from 'ng-svg-icon';
 
 @Component({
   selector: 'app-component',
-  template: `<div *ngFor="let iconName of iconNames" >
+  template: `
+  <ng-svg-icon name="amazon" [color]="color"></ng-svg-icon>
+
+  <div *ngFor="let iconName of iconNames" >
   <ng-svg-icon [name]="iconName" [color]="color"></ng-svg-icon>
   {{iconName}}
   </div>`
@@ -28,8 +31,7 @@ class AppComponent {
   declarations: [AppComponent],
   imports: [BrowserModule,
     NgSvgIconModule.forRoot({
-      defaultColor: '#000',
-      defaultSize: 50
+      defaultColor: '#000'
     })]
 })
 class AppModule { }
