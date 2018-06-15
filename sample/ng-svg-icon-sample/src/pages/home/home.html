@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar text-center>
+  <ion-navbar text-center color="primary">
     <ion-title>
       Welcome to Ng-Svg-Icon
     </ion-title>
@@ -10,7 +10,7 @@
   </ion-navbar>
 
   <ion-row>
-    <ion-searchbar no-padding no-margin (ionInput)="onRuleFilter($event)"></ion-searchbar>
+    <ion-searchbar color="danger" no-padding no-margin (ionInput)="onRuleFilter($event)"></ion-searchbar>
   </ion-row>
 
 </ion-header>
@@ -22,7 +22,7 @@
         <ion-row text-center>
           <ng-svg-icon style="margin:auto;" [name]="iconName" [color]="color" [size]="size" [viewBox]="viewBox"></ng-svg-icon>
         </ion-row>
-        <ion-card-content style="font-size:small" text-center>
+        <ion-card-content style="font-size:small; font-weight: 700;" text-center>
           {{iconName}}
         </ion-card-content>
       </ion-card>
@@ -32,13 +32,13 @@
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar>
+  <ion-toolbar color="light">
 
     <ion-row>
       <ion-col col-sm-4 col-12>
         <ion-item>
           <ion-label>Color</ion-label>
-          <ion-input type="text" [(ngModel)]="color"></ion-input>
+          <ion-input type="text" no-line [(ngModel)]="color"></ion-input>
         </ion-item>
       </ion-col>
 

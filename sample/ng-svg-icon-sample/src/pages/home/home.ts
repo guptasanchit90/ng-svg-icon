@@ -26,7 +26,7 @@ export class HomePage {
     private toastCtrl: ToastController) {
     this.iconNames = Object.keys(ngSvgIconService.getShapes());
     this.iconsToShow = this.iconNames;
-    this.searchTerm$.debounceTime(400)
+    this.searchTerm$.debounceTime(200)
       .distinctUntilChanged()
       .do(res => {
         this.iconsToShow = this.iconNames;
