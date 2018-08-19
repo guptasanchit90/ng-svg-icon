@@ -4,7 +4,7 @@
 
 * NPM : https://www.npmjs.com/package/ng-svg-icon
 
-* Demo : https://guptasanchit90.github.io/ng-svg-icon/
+* Demo : https://ng-svg-icons.netlify.com/
 
 ## Status
 [![Build Status](https://travis-ci.org/guptasanchit90/ng-svg-icon.svg?branch=master)](https://travis-ci.org/guptasanchit90/ng-svg-icon)
