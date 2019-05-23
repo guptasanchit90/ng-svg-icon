@@ -42,7 +42,7 @@
     "@types/node": "6.0.96",
     "angular-in-memory-web-api": "0.3.2",
     "codelyzer": "3.2.2",
-    "concurrently": "3.5.1",
+    "concurrently": "3.6.1",
     "core-js": "2.5.3",
     "del": "2.2.2",
     "gulp": "3.9.1",
