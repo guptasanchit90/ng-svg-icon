@@ -31,12 +31,12 @@
     "url": "https://github.com/guptasanchit90/ng-svg-icon/issues"
   },
   "devDependencies": {
-    "@angular/common": "5.2.0",
-    "@angular/compiler": "5.2.0",
-    "@angular/compiler-cli": "5.2.0",
-    "@angular/core": "5.2.0",
-    "@angular/platform-browser": "5.2.0",
-    "@angular/platform-browser-dynamic": "5.2.0",
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
     "@compodoc/compodoc": "1.0.5",
     "@types/jasmine": "2.5.53",
     "@types/node": "6.0.96",
