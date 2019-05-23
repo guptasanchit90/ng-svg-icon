@@ -47,7 +47,7 @@
     "del": "2.2.2",
     "gulp": "3.9.1",
     "gulp-rename": "1.2.2",
-    "gulp-rollup": "2.15.0",
+    "gulp-rollup": "2.16.2",
     "jasmine-core": "2.6.4",
     "jasmine-spec-reporter": "4.1.1",
     "karma": "2.0.2",
