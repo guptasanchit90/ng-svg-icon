@@ -43,7 +43,7 @@
     "angular-in-memory-web-api": "0.3.2",
     "codelyzer": "3.2.2",
     "concurrently": "3.5.1",
-    "core-js": "2.5.3",
+    "core-js": "2.6.9",
     "del": "2.2.2",
     "gulp": "3.9.1",
     "gulp-rename": "1.2.2",
