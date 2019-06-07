@@ -8,6 +8,7 @@
 
 ## Status
 [![Build Status](https://travis-ci.org/guptasanchit90/ng-svg-icon.svg?branch=master)](https://travis-ci.org/guptasanchit90/ng-svg-icon)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fguptasanchit90%2Fng-svg-icon.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fguptasanchit90%2Fng-svg-icon?ref=badge_shield)
 
 ## Installation
 
@@ -75,3 +76,6 @@ Once library is imported, you can use its components in your Angular application
 ## License
 
 MIT © [Sanchit Gupta](mailto:gupta.sanchit90@gmail.com)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fguptasanchit90%2Fng-svg-icon.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fguptasanchit90%2Fng-svg-icon?ref=badge_large)
