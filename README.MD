@@ -7,7 +7,7 @@
 * Demo : https://ng-svg-icons.netlify.com/
 
 ## Status
-[![Build Status](https://travis-ci.org/guptasanchit90/ng-svg-icon.svg?branch=master)](https://travis-ci.org/guptasanchit90/ng-svg-icon)
+[![Build Status](https://travis-ci.org/guptasanchit90/ng-svg-icon.svg?branch=master)](https://travis-ci.org/guptasanchit90/ng-svg-icon) [![Greenkeeper badge](https://badges.greenkeeper.io/guptasanchit90/ng-svg-icon.svg)](https://greenkeeper.io/)
 
 ## Installation
 
